@@ -1,27 +1,27 @@
-
-# worksheet 1.5
-
-Task 2 is the portfolio task - please ensure that you do not change any file or folder names to allow this to work correctly with the Gradescope autograder.
-
-You should test your code youself using the provided text file to ensure it is working as expected.
+# Week 8 Worksheet
 
 ## Task 1
 
-There are 3 files provided to test your code on - these are in the subfolder 'files/'.
+Use random to implement:
 
-Python filenames can include paths, so to use these in your code you need to give them the full path:
-'files/story.txt'
-You can also concatenate 'files/' to filenames if you don't want to type this out every time :)
-
+1. A dice roll simulator
+2. A grade checker
+3. A grade plotter
 
 ## Task 2 - Portfolio
 
-The subdirectory 'example_outfiles' contains the 4 output files produced by the implementation of the program which your code is being tested against. You should use these to compare to your output files and ensure that your files have the same data.
+Using the Leeds air quality data provided, create a line graph plotting the average air quality against the date.
+
+You must put **your name or student identifier (e.g. abc1234)** into the graph's title, otherwise you will be asked to resubmit it.
+
+Submit a screenshot of your graph as your evidence.
 
 ## Task 3 - Extension
 
-For the extension task, we point you towards [Advent of Code](https://adventofcode.com/2024), an annual programming challenge; there are a wide variety of tasks available, which have a common focus of file handling.
+Using the basic Flask template provided, try and make a site which allows a user to upload a data file and produce a graph from it.
 
-These are language ambiguous, and usually easily solvable in python which is able to deal with the string-handling needed for them. These are great for a bit of practice, some fun programming challenges, and an opportunity to really put your problem solving skills to the test.
+This will be a challenging task which involves using various other libraries and bits of the Flask ecosystem, so may take a while to do!
 
-They do ramp up significantly in difficultly, but you can complete previous years' early challenges through the 'Events' button at the top.
+A sample sales file is provided, as well as my fake data maker which you can use to produce more data in the same format.
+You will need to pip install faker to use it.
+
