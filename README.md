@@ -1,27 +1,47 @@
-# Week 8 Worksheet
 
-## Task 1
 
-Use random to implement:
+# Task 3: Pokémon Battle Simulator
 
-1. A dice roll simulator
-2. A grade checker
-3. A grade plotter
+## Overview
+This task involves building a Pokémon Battle Simulator. You will fetch Pokémon stats using the PokéAPI and simulate battles with logic based on their attributes.
 
-## Task 2 - Portfolio
+**This is as much an Object-Oriented Programming task as it is an API task!** You **should use classes** to complete this task. You'll apply the OOP concepts you learned in Session 2 (Task 2: Team class) to design a more complex system.
 
-Using the Leeds air quality data provided, create a line graph plotting the average air quality against the date.
+## Worksheet Objectives
+- **API Integration**: Fetch and parse data from the PokéAPI.
+- **Object-Oriented Programming**: Design and implement a `Pokemon` class to model Pokémon and their behaviours.
+- **Encapsulation**: Store Pokémon data (stats, HP) as instance attributes and manipulate them through methods.
+- **Methods**: Implement behaviours like `attack()`, `take_damage()`, and `is_fainted()` as class methods.
+- **Stat Calculations**: Apply Pokémon stat formulas and damage calculations.
+- **Game Logic**: Implement turn-based battle simulation with proper state management.
+- **Stretch Goal**: Add randomness for unpredictability (critical hits, misses).
 
-You must put **your name or student identifier (e.g. abc1234)** into the graph's title, otherwise you will be asked to resubmit it.
+## Exercises
 
-Submit a screenshot of your graph as your evidence.
+**Note on Progression:** Task 3.1 can use functions to warm up with API calls and stat calculations. **Task 3.2 should use a `Pokemon` class** - you'll refactor the stat calculation logic into class methods.
 
-## Task 3 - Extension
+### Exercise 3.1: Compare Pokémon Stats (Warm-up)
+- **Goal**: Fetch and calculate stats for two Pokémon, then compare their attributes.
+- **Approach**: Functions are acceptable for this warm-up task
+- **Key Features**:
+  - Use base stats (attack, defense, speed) at level 50
+  - Display which Pokémon has higher stats in each category
+  - This prepares you for building the `Pokemon` class in Task 3.2
 
-Using the basic Flask template provided, try and make a site which allows a user to upload a data file and produce a graph from it.
+### Exercise 3.2: Simulate a Turn-Based Battle (MAIN TASK)
+- **Goal**: Create a `Pokemon` class and use it to simulate turn-based battles.
+- **Required Class Structure**:
+  - `Pokemon` class with methods: `__init__()`, `attack()`, `take_damage()`, `is_fainted()`
+  - Helper methods for stat calculations (use underscore prefix: `_calculate_stat()`)
+  - `__str__()` method for nice Pokemon display
+- **Key Features**:
+  - Fetch Pokemon data from API in `__init__()`
+  - Use speed stats to determine the first attacker
+  - Alternate attacks until one Pokémon's HP reaches 0
+  - Display battle details and declare the winner
 
-This will be a challenging task which involves using various other libraries and bits of the Flask ecosystem, so may take a while to do!
-
-A sample sales file is provided, as well as my fake data maker which you can use to produce more data in the same format.
-You will need to pip install faker to use it.
-
+### Exercise 3.3: Add Random Events (Stretch Goal)
+- **Goal**: Introduce randomness like critical hits or misses.
+- **Key Features**:
+  - Add a chance for double damage (critical hit) or no damage (miss).
+  - Display events dynamically during the battle.
